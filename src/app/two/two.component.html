@@ -1,0 +1,11 @@
+<div *ngIf="!findUser; else userInfo">
+  No user found
+</div>
+<ng-template #userInfo>
+<p>
+  User id is {{ findUser.id }}
+</p> 
+<p>
+  User name is {{ findUser.name }}
+</p>
+</ng-template>
